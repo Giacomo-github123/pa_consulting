@@ -1,0 +1,18 @@
+class flower_data:
+    """A sample flower class"""
+
+    def __init__(self, name, ph, temp, humidity, time):
+        self.name = name
+        self.ph = ph
+        self.temp = temp
+
+    @property
+    def temp(self):
+        return f'temp at {time} = {temp}
+
+    @property
+    def name(self):
+        return '{}'.format(name)
+
+    def __repr__(self):
+        return "Flower('{}', '{}', {})".format(self.name, self.ph, self.temp, self.humidity, self.time)
